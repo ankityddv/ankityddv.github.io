@@ -769,6 +769,9 @@ a:hover {
 ======================================*/
 
 .work-box {
+border-radius: 25px;
+  background: #73AD21;
+  padding: 20px;
   margin-bottom: 3rem;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
