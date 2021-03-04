@@ -1146,6 +1146,12 @@ footer .credits a {
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
+  
+}
+
+.buttonWithImage {
+  border: none;
+  outline: none;
 }
 
 .button:focus {
