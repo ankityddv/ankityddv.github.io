@@ -319,7 +319,7 @@ body {
         background-color: #13161d;
         border-radius: 7%;
         width: 86%;
-        height: 430px;
+        height: auto;
         margin-left: 7%;
         margin-right: 7%;
         margin-bottom: 20%;
@@ -353,9 +353,9 @@ body {
         font-family: "Segoe UI Regular";
         color: white;
         font-size: 1.2rem;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-right: 0%;
         margin-top: 10%;
+        padding-bottom: 0%;
     }
 
     .blogBox .creator p {
@@ -366,12 +366,11 @@ body {
         margin-left: 10%;
         margin-top: 12%;
     }
-    
 
     .blogBox img {
-        border-radius: 7%;
+        border-radius: 3%;
         width: 80%;
-        height: 50%;
+        height: auto;
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 10%;
@@ -383,6 +382,7 @@ body {
         font-size: 1.2rem;
         margin-left: 10%;
         margin-right: 10%;
+        padding-bottom: 10%;
     }
 
     /* Blogs catalog page [END] */
