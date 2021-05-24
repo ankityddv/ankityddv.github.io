@@ -157,6 +157,7 @@ body {
     }
 
     .shareBttn a{
+        display:unset;
         color: #fff;
         font-family: "Segoe UI Regular";
         background-color: #13161d;
@@ -172,6 +173,7 @@ body {
 
     /* main paragraph *left* */
     .content .paragraph {
+        padding-top: 5%;
         padding-left: 7%;
         padding-right: 7%;
     }
