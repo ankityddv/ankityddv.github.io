@@ -51,8 +51,9 @@ body {
 
 /* blog title */
 .content .title {
-    width: 47%;
+    width: 100%;
     padding-left: 8.6%;
+    padding-right: 8.6%;
 }
 
 .content .title h1 {
@@ -214,6 +215,7 @@ body {
         font-family: "Segoe UI Bold";
         color: #fff;
         font-size: 3.5rem;
+        padding-right: 7%;
     }
 
     /* blog description */
@@ -275,10 +277,11 @@ body {
     .blogBox {
         background-color: #13161d;
         border-radius: 7%;
-        width: 80%;
+        width: 86%;
         height: 380px;
         margin-left: 7%;
-        margin-right: 10%;
+        margin-right: 7%;
+        margin-bottom: 20%;
     }
 
     .blogBox a {
@@ -310,6 +313,7 @@ body {
         color: white;
         font-size: 1.2rem;
         margin-left: 10%;
+        margin-right: 10%;
         margin-top: 10%;
     }
 
