@@ -27,6 +27,11 @@
     src: local('Segoe UI Bold Italic'), url('Fonts/Segoe/Segoe\ UI\ Bold\ Italic.woff') format('woff');
 }
 
+@font-face {
+    font-family: Ubuntu R;
+    src: url(Fonts/Ubuntu/Ubuntu-R.ttf) format("truetype");
+}
+
 body {
     background-color: #101010;
 }
@@ -53,13 +58,13 @@ body {
 .content .title {
     width: 100%;
     padding-left: 8.6%;
-    padding-right: 8.6%;
 }
 
 .content .title h1 {
     font-family: "Segoe UI Bold";
     color: #fff;
     font-size: 4rem;
+    padding-right: 8.6%;
 }
 
 /* blog description */
@@ -218,6 +223,20 @@ body {
         padding-right: 7%;
     }
 
+    .content .paragraph h2 {
+        font-family: "Segoe UI Bold";
+        color: #fff;
+        font-size: 1.8rem;
+        padding-top: 2%;
+    }
+
+    .content .paragraph img {
+        width: 100%;
+        height: auto;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
     /* blog description */
 
     .content .description {
@@ -230,7 +249,7 @@ body {
         font-size: 2rem;
     }
 
-    .shareBttn a{
+    .shareBttn a {
         display:unset;
         color: #fff;
         font-family: "Segoe UI Regular";
@@ -247,7 +266,6 @@ body {
 
     /* main paragraph *left* */
     .content .paragraph {
-        padding-top: 5%;
         padding-left: 7%;
         padding-right: 7%;
     }
@@ -258,8 +276,31 @@ body {
         font-size: 1.2rem;
     }
 
+    ul .a {
+        list-style-type: upper-roman;
+    }
+
+    li {
+        font-family: "Segoe UI Regular";
+        font-size: 1.2rem;
+        color: #fff;
+        margin-top: 7%;
+    }
+
     /* callout box on right */
 
+    .codesnippet{
+        background-color: #13161d;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 5%;
+        margin-top: 5%;
+        border-radius: 2%;
+    }
+
+    .codesnippet p {
+        font-family: Ubuntu R;
+    }
     .content .callout {
         width: 15rem;
         height: 20rem;
@@ -278,7 +319,7 @@ body {
         background-color: #13161d;
         border-radius: 7%;
         width: 86%;
-        height: 380px;
+        height: 430px;
         margin-left: 7%;
         margin-right: 7%;
         margin-bottom: 20%;
@@ -341,6 +382,7 @@ body {
         color: white;
         font-size: 1.2rem;
         margin-left: 10%;
+        margin-right: 10%;
     }
 
     /* Blogs catalog page [END] */

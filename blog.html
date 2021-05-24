@@ -27,7 +27,7 @@
 
                 <div class="description">
                     <p>
-                        Our job at Moving Parts is to make your app the best it can be. Beyond being highly usable and accessible, this also means good looking.
+                        If you’re here reading this, it means you already have enough knowledge about iOS development and want to add that extra bit of magic to your apps.
                     </p>
                 </div>
 
@@ -36,15 +36,116 @@
                 </div>
 
                 <div class="paragraph">
-                    <p>
-                        These days, you see gradient meshes in a lot of places from the Instagram app icon to the Framer website and find implementations for Sketch, Figma and of course Illustrator.
-                    </p>
-                    <p>
-                        Conceptually, gradient meshes generalize linear gradients by interpolating between colors that can be placed along two dimensions on a plane.
-                    </p>
-                    <p>
-                        But we don't want to limit ourselves to displaying pre-exported assets. To make your apps truly responsive and to dynamically react to changes in color and user preference, we need to be able to generate these gradient meshes on the fly.
-                    </p>
+
+                    <h2>What we’ll cover in this article?</h2>
+                    <p>By the end of this article, you will understand and be able to build your own iOS app with custom Lottie animations.</p>
+
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQGagT9MWG4hKQ/article-inline_image-shrink_1500_2232/0/1605338929880?e=1627516800&v=beta&t=QQLJaTQ0EOYOwBsEOQKsZDlZRMk0kc5_ffhuOTRT-lw" alt="img">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQGrrlqALeejCg/article-inline_image-shrink_1500_2232/0/1605338960611?e=1627516800&v=beta&t=4zFFUNd1sdTEHWBKboqEgu4_hjfJQ45J1HAjllHUeGA">
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQHhW--cPuUNrA/article-inline_image-shrink_1500_2232/0/1605338979115?e=1627516800&v=beta&t=Ggq3o0pWN6iJLNmTlR1yk_rK4fnZK2IjO7b4jVPbl8k">
+
+                    <h2>What is Lottie?</h2>
+                    <p>A Lottie is a JSON-based animation file format that enables designers to ship animations on any platform as easily as shipping static assets.</p>
+
+                    <h2>How do I start?</h2>
+                    <p>You’re looking for animations in your app. So, I’m assuming you know the basics and already familiar with cocoa pods installation.</p>
+
+                    <p>Let’s get started :</p>
+
+                    <ul class="a">
+                        <li> Open Xcode, select “Create new Xcode project” </li>
+
+                        <li> Select iOS, then “App” </li>
+
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQF_DqR5JjixQA/article-inline_image-shrink_1000_1488/0/1605339067186?e=1627516800&v=beta&t=3jfjbSIqE6tLs6iXLT2KMRwLXIL2selrpxvdLCEmD0I" alt="img">
+
+                        <li> Add the name of the project, organization and identifier. Select Swiftand Storyboard. Tap Next and Create. </li>
+                        
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQGNIPKfAP7n3w/article-inline_image-shrink_1000_1488/0/1605339092003?e=1627516800&v=beta&t=bFuyXc-NLrtMMv7zkF-HRJ2kxDQva3PgIZhhv-_ZZkY alt="img">
+                        
+                        <li> To start, close the project, open terminal and navigate to your project’s root folder. Type and run the following: </li>
+                        
+                        <div class="codesnippet">
+                            <p>pod init</p>
+                        </div>
+
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQGqsDTKVbFbjQ/article-inline_image-shrink_1000_1488/0/1605339140682?e=1627516800&v=beta&t=eylgiEle8VY2tZiDPWaa0KuBYoU6jU9yEFqSTFtBy-s" alt="img">
+
+                        <div class="codesnippet">
+                            <p>
+                                Uncomment the next line to define a global platform for your project<br>
+                                # platform :ios, '14.0' <br>
+                                target 'LottieAnimations' do <br>
+                                # Comment the next line if you don't want to use dynamic frameworks <br>
+                                use_frameworks! <br>
+                                # Pods for LottieAnimations <br>
+                                pod 'lottie-ios' <br>
+                                end <br>
+                            </p>
+                        </div>
+
+                        <li> Save, and open the terminal in your Mac and navigate to the project root folder, then type and run: </li>
+
+                        <div class="codesnippet">
+                            <p>
+                                pod install
+                            </p>
+                        </div>
+
+                        <li> As soon as it’s finished, double tap to open the xcworkspace file: </li>
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQHRdJD9jhoJwQ/article-inline_image-shrink_1000_1488/0/1605340298854?e=1627516800&v=beta&t=Gk9J-8KNZ5IkqtCNMpetqXDA5tVBsLDq0aZCV4NdN70" alt="img">
+
+                        <li> Now navigate to ViewController.swift, add following line to the top of the file. </li>
+
+                        <div class="codesnippet">
+                            <p>
+                                import Lottie
+                            </p>
+                        </div>
+
+                        <li> Make sure if everything is okay by pressing cmd+B </li>
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQFITYSvQztPQA/article-inline_image-shrink_1000_1488/0/1605340316518?e=1627516800&v=beta&t=Ls8z5okMHiTnTO6LHTk4UC0zSM1MdvoNCovBfnTNPcw" alt="img">
+
+                        <li> Great, the fun part about Lottie is you can choose from 1000s of free animations on LottieFiles. </li>
+                        <li>Once downloaded the JSON animation file, drag and drop to the project, make sure our project is selected as target and copy items if needed is selected.</li>
+                        <img src="https://media-exp1.licdn.com/dms/image/C4D12AQHMHTRJvsdbhQ/article-inline_image-shrink_1000_1488/0/1605340337052?e=1627516800&v=beta&t=vOWl_4yfef4w41tdtfZ9xqdeFfET-iBy2VKkPiIP5AM" alt="img">
+                    </ul>
+
+                    <h2> Adding a Lottie animation view using UIKit </h2>
+                    <p>In your storyboard or Xib file, drag and drop a UIView to your ViewController, then on the right corner, navigate to Identity Inspector, change class to AnimationView and set module to Lottie.</p>
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQEALI9VQDIQ4A/article-inline_image-shrink_1000_1488/0/1605340400530?e=1627516800&v=beta&t=bfMY0JLZH2DPtwCMe2Je2ONZRxiEpmjTJLemNI3ZdGg" alt="img">
+                    <p>Then in top right corner, navigate to Attribute Inspector and add name of the animation file (excluding .json extension).</p>
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQEsOADN4XMhlA/article-inline_image-shrink_1000_1488/0/1605340425911?e=1627516800&v=beta&t=tJSg03CDSXOkErSjAX2idKSGvOY5U2rhpTGEj0qiqP4" alt="img">
+                    <p>Now link the view to your view controller</p>
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D12AQFfd1fpriG0Nw/article-inline_image-shrink_1000_1488/0/1605340446880?e=1627516800&v=beta&t=C_u3DA86hGnw4fV5NDvTvmmnh_W1VVNEPP4iU9Rdq7I" alt="img">
+                    <p>Once linked, close the right side Editor and navigate to ViewController.swift. Replace the function viewDidLoad with the following:</p>
+                    
+                    <div class="codesnippet">
+                        <p>
+                            override func viewDidLoad() {<br>
+
+                                super.viewDidLoad()<br>
+                                
+                                // 1. Set animation content mode<br>
+                                
+                                animationVieww.contentMode = .scaleAspectFit<br>
+                                
+                                // 2. Set animation loop mode<br>
+                                
+                                animationVieww.loopMode = .loop<br>
+                                
+                                // 3. Adjust animation speed<br>
+                                
+                                animationVieww.animationSpeed = 0.5<br>
+                                
+                                // 4. Play animation<br>
+                                animationVieww.play()<br>
+                              
+                              }<br>
+                        </p>
+                    </div>
+
+                    <p style="margin-bottom: 30%;">And test it out by pressing CMD+R. And see the magic happening 🪄 💫</p>
                 </div>
             </div>
             
