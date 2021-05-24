@@ -108,7 +108,6 @@ body {
 @media only screen and (max-width:700px) {
 
     body {
-        display: grid;
         background-color: #101010;
         width: auto;
         float: right;
@@ -121,7 +120,7 @@ body {
         float: left;
         width: 100px;
         height: 100px;
-        padding-left: 13%;
+        padding-left: 7%;
     }
 
     /* main header image */
@@ -197,4 +196,74 @@ body {
     }
 
     /* blog-detail page [END] */
+
+    /* Blogs catalog page [START] */
+
+    .blogBox {
+        background-color: #13161d;
+        border-radius: 7%;
+        width: 80%;
+        height: 380px;
+        margin-left: 7%;
+        margin-right: 10%;
+    }
+
+    .blogBox a {
+        display: block;
+    }
+
+    .blogBox .creator {
+        /* background-color: #fff; */
+        width: 80%;
+        height: 10%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+
+    .blogBox .creator img {
+        float: left;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-left: 0;
+    }
+
+    .blogBox .creator h1 {
+        float: right;
+        font-family: "Segoe UI Regular";
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .blogBox .creator p {
+        float: right;
+        font-family: "Segoe UI Regular";
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 10%;
+        margin-top: 12%;
+    }
+    
+
+    .blogBox img {
+        border-radius: 7%;
+        width: 80%;
+        height: 50%;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 10%;
+    }
+
+    .blogBox h1 {
+        font-family: "Segoe UI Bold";
+        color: white;
+        font-size: 1.2rem;
+        margin-left: 10%;
+    }
+
+    /* Blogs catalog page [END] */
 }
