@@ -1,53 +1,33 @@
-/* Initialise font faces */
+/* Segoe UI */
 @font-face {
     font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
-    src: local('Segoe UI'), url('Fonts/Segoe/Segoe\ UI.woff') format('woff');
+    src: local('Segoe UI Regular'), url('../Fonts/Segoe/Segoe\ UI.woff') format('woff');
 }
-
 @font-face {
     font-family: 'Segoe UI Italic';
     font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Italic'), url('Fonts/Segoe/Segoe\ UI\ Italic.woff') format('woff');
+    font-weight: 100;
+    src: local('Segoe UI Italic'), url('../Fonts/Segoe/Segoe\ UI\ Italic.woff') format('woff');
 }
-
 @font-face {
     font-family: 'Segoe UI Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Bold'), url('Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
+    font-style: bold;
+    font-weight: 100;
+    src: local('Segoe UI Bold'), url('../Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
 }
-    
-@font-face {
-    font-family: 'Segoe UI Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Bold Italic'), url('Fonts/Segoe/Segoe\ UI\ Bold\ Italic.woff') format('woff');
-}
+
 /* Ubuntu Mono */
 @font-face {
     font-family: 'UbuntuMono-Regular';
-    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
-@font-face {
-    font-family: 'UbuntuMono-Italic';
-    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
-@font-face {
-    font-family: 'UbuntuMono-Bold';
-    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
-@font-face {
-    font-family: 'UbuntuMono-BoldItalic';
-    src: url('Fonts/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+    src: url('../Fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+}
 
 /* Ubuntu */
 @font-face {
     font-family: 'Ubuntu-Light';
-    src: url('Fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+    src: url('../Fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
 }  
 
 body {
@@ -83,6 +63,7 @@ body {
         padding-right: 10%;
     }
 
+    /* top - section */
     .top-section .top-section-image img {
         width: 80%;
         height: auto;
@@ -128,6 +109,7 @@ body {
         padding-right: 20%;
     }
 
+    /* middle - section */
     .middle-section {
         /* background-color: #8245E5; */
         width: 80%;
@@ -247,10 +229,12 @@ body {
         font-size: 1.2rem;
     }
 
+    /* footer */
     .footer {
         background-color: #1A1A1A;
         width: 100%;
         height: auto;
+        padding-bottom: 3%;
     }
 
     .footer .top-text {
@@ -292,7 +276,6 @@ body {
         text-align: left;
         font-family: "Segoe UI";
         font-size: 1.2rem;
-        font-weight: 20;
     }
 
     .footer .top-text h4 a {
@@ -301,16 +284,13 @@ body {
         text-align: left;
         font-family: "Segoe UI";
         font-size: 1.2rem;
-        font-weight: 100;
     }
 
     .footer p {
         color: #fff;
-        text-decoration: none;
         text-align: center;
         font-family: "Segoe UI";
         font-size: 0.8rem;
-        font-weight: 100;
         margin-top: 20%;
         padding-bottom: 10%;
     }

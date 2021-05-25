@@ -1,6 +1,6 @@
 /* Initialise font faces */
 @font-face {
-    font-family: 'Segoe UI Regular';
+    font-family: 'Segoe UI';
     font-style: normal;
     font-weight: normal;
     src: local('Segoe UI Regular'), url('Fonts/Segoe/Segoe\ UI.woff') format('woff');
@@ -8,15 +8,15 @@
 
 @font-face {
     font-family: 'Segoe UI Italic';
-    font-style: normal;
-    font-weight: normal;
+    font-style: Italic;
+    font-weight: 100;
     src: local('Segoe UI Italic'), url('Fonts/Segoe/Segoe\ UI\ Italic.woff') format('woff');
 }
 
 @font-face {
     font-family: 'Segoe UI Bold';
-    font-style: normal;
-    font-weight: normal;
+    font-style: bold;
+    font-weight: 100;
     src: local('Segoe UI Bold'), url('Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
 }
     
@@ -27,10 +27,6 @@
     src: local('Segoe UI Bold Italic'), url('Fonts/Segoe/Segoe\ UI\ Bold\ Italic.woff') format('woff');
 }
 
-@font-face {
-    font-family: Ubuntu R;
-    src: url(Fonts/Ubuntu/Ubuntu-R.ttf) format("truetype");
-}
 
 body {
     background-color: #101010;
@@ -299,7 +295,7 @@ body {
     }
 
     .codesnippet p {
-        font-family: Ubuntu R;
+        font-family: "Segoe UI Bold";
     }
     .content .callout {
         width: 15rem;
