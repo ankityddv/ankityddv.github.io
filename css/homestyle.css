@@ -1,0 +1,319 @@
+/* Initialise font faces */
+@font-face {
+    font-family: 'Segoe UI';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI'), url('Fonts/Segoe/Segoe\ UI.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Italic'), url('Fonts/Segoe/Segoe\ UI\ Italic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold'), url('Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
+}
+    
+@font-face {
+    font-family: 'Segoe UI Bold Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe UI Bold Italic'), url('Fonts/Segoe/Segoe\ UI\ Bold\ Italic.woff') format('woff');
+}
+/* Ubuntu Mono */
+@font-face {
+    font-family: 'UbuntuMono-Regular';
+    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+@font-face {
+    font-family: 'UbuntuMono-Italic';
+    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Italic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+@font-face {
+    font-family: 'UbuntuMono-Bold';
+    src: url('Fonts/Ubuntu_Mono/UbuntuMono-Bold.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+@font-face {
+    font-family: 'UbuntuMono-BoldItalic';
+    src: url('Fonts/Ubuntu_Mono/UbuntuMono-BoldItalic.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+/* Ubuntu */
+@font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('Fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body {
+    background-color: #101010;
+}
+
+/* Media queries */
+@media only screen and (max-width:700px) {
+
+    html,body {
+        background-color: #101010;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
+    }
+
+    /* navigation bar logo */
+    .nav img {
+        float: left;
+        width: 20%;
+        height: auto;
+        padding-top: 10%;
+        padding-left: 10%;
+    }
+
+    .nav a img {
+        float: right;
+        width: 5%;
+        height: auto;
+        padding-top: 12%;
+        padding-right: 10%;
+    }
+
+    .top-section .top-section-image img {
+        width: 80%;
+        height: auto;
+        padding-left: 15%;
+        padding-right: 5%;
+    }
+
+    .badge {
+        background-color: #8245E5;
+        width: 60%;
+        height: 30%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .badge h1 {
+        color: white;
+        text-align: center;
+        font-family: "Ubuntu-Light";
+        font-weight: 100;
+        font-size: 0.8rem;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .top-section .title h1 {
+        color: white;
+        text-align: center;
+        font-family: "Segoe UI Bold";
+        font-size: 2.4rem;
+        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .top-section .title h2 {
+        color: white;
+        text-align: center;
+        font-family: "Segoe UI Italic";
+        font-size: 1rem;
+        width: 60%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .middle-section {
+        /* background-color: #8245E5; */
+        width: 80%;
+        height: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 30%;
+    }
+
+    .middle-section .card {
+        background-color: #1A1A1A;
+    }
+
+    .middle-section .card h1 {
+        color: white;
+        text-align: left;
+        font-family: "Segoe UI Bold";
+        font-size: 1.2rem;
+        padding-left: 8%;
+        padding-top: 5%;
+    }
+
+    .middle-section .card h2 {
+        color: white;
+        text-align: left;
+        font-family: "Ubuntu-Light";
+        font-size: 0.7rem;
+        font-weight: 100;
+        padding-left: 8%;
+    }
+
+    .middle-section .card p {
+        color: white;
+        text-align: left;
+        font-family: "Segoe UI Italic";
+        font-size: 0.8rem;
+        padding-left: 8%;
+        padding-bottom: 10%;
+    }
+
+    .middle-section .card img {
+        float: right;
+        padding-right: 8%;
+    }
+
+    .middle-section .middle-content h1 {
+        color: #808893;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 0.8rem;
+        margin-top: 5rem;
+    }
+
+    .middle-section .middle-content h2 {
+        color: #fff;
+        text-align: left;
+        font-family: "Segoe UI Bold";
+        font-size: 2rem;
+    }
+    
+    .middle-section .middle-content h3 {
+        color: #fff;
+        text-align: left;
+        font-family: "Segoe UI Italic";
+        font-size: 1.3rem;
+    }
+
+    .middle-section .middle-content p {
+        color: #737373;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1.2rem;
+    }
+
+    /* Bottom - section */
+    .bottom-section {
+        width: 80%;
+        height: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .bottom-section .top-text h1 {
+        color: #fff;
+        text-align: left;
+        font-family: "Segoe UI Bold";
+        font-size: 2rem;
+    }
+
+    .bottom-section .top-text p {
+        color: #737373;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1.2rem;
+    }
+
+    .bottom-section .bottom-text h1 {
+        color: #8245E5;
+        text-align: left;
+        font-family: "Segoe UI Bold";
+        font-size: 2rem;
+    }
+
+    .bottom-section .bottom-text p {
+        color: #737373;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1.2rem;
+    }
+
+    .bottom-section .bottom-text a {
+        color: #8245E5;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1.2rem;
+    }
+
+    .footer {
+        background-color: #1A1A1A;
+        width: 100%;
+        height: 400px;
+    }
+
+    .footer .top-text {
+        width: 80%;
+        height: 100px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 8%;
+    }
+
+    .footer .top-text h1 {
+        color: white;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1rem;
+        font-weight: 100;
+        margin-top: 10%;
+    }
+
+    .footer .top-text a {
+        color: #8245E5;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1.2rem;
+    }
+
+    .footer .top-text h2 {
+        color: #808893;
+        text-align: left;
+        font-family: "UbuntuMono-Regular";
+        font-size: 1rem;
+        font-weight: 100;
+        margin-top: 20%;
+    }
+
+    .footer .top-text h3 a {
+        color: #C4C4C4;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Segoe UI";
+        font-size: 1.2rem;
+        font-weight: 20;
+    }
+
+    .footer .top-text h4 a {
+        color: #fff;
+        text-decoration: none;
+        text-align: left;
+        font-family: "Segoe UI";
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+
+    .footer p {
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        font-family: "Segoe UI";
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-top: 20%;
+        padding-bottom: 10%;
+    }
+
+
+}
