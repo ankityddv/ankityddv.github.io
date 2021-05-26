@@ -77,7 +77,7 @@ html,body {
 
 .nav .nav-links li a:hover{
     font-family: "UbuntuMono-Regular";
-    color: #8245E5;
+    color: #995AFF;
     text-decoration: none;
     padding-right: 90%;
 }
@@ -109,7 +109,7 @@ html,body {
 }
 
 .badge {
-    background-color: #8245E5;
+    background-color: #995AFF;
     width: 40%;
     margin-left: 15%;
     margin-right: 20%;
@@ -259,7 +259,7 @@ html,body {
 }
 
 .bottom-section .bottom-text h1 a{
-    color: #8245E5;
+    color: #995AFF;
     text-align: left;
     font-family: "Segoe UI Bold";
     font-size: 2rem;
@@ -273,7 +273,7 @@ html,body {
 }
 
 .bottom-section .bottom-text a {
-    color: #8245E5;
+    color: #995AFF;
     text-align: left;
     font-family: "UbuntuMono-Regular";
     font-size: 1.2rem;
@@ -312,7 +312,7 @@ html,body {
 }
 
 .footer .left-section .top-text a {
-    color: #8245E5;
+    color: #995AFF;
     text-align: left;
     font-family: "UbuntuMono-Regular";
     font-size: 1.2rem;
@@ -364,7 +364,7 @@ html,body {
 
 .footer .right-section .nav-links-footer li a:hover{
     font-family: "UbuntuMono-Regular";
-    color: #8245E5;
+    color: #995AFF;
     text-decoration: none;
 }
 
@@ -453,7 +453,7 @@ html,body {
     }
 
     .badge {
-        background-color: #8245E5;
+        background-color: #995AFF;
         width: 60%;
         height: 30%;
         margin-left: 20%;
@@ -602,7 +602,7 @@ html,body {
     }
 
     .bottom-section .bottom-text h1 a{
-        color: #8245E5;
+        color: #995AFF;
         text-align: left;
         font-family: "Segoe UI Bold";
         font-size: 2rem;
@@ -616,7 +616,7 @@ html,body {
     }
 
     .bottom-section .bottom-text a {
-        color: #8245E5;
+        color: #995AFF;
         text-align: left;
         font-family: "UbuntuMono-Regular";
         font-size: 1.2rem;
@@ -653,7 +653,7 @@ html,body {
     }
 
     .footer .left-section .top-text a {
-        color: #8245E5;
+        color: #995AFF;
         text-align: left;
         font-family: "UbuntuMono-Regular";
         font-size: 1.2rem;
