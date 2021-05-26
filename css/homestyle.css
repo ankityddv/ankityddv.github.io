@@ -30,6 +30,291 @@
     src: url('../Fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
 }  
 
+
+html,body {
+    background-color: #101010;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    scroll-behavior: smooth;
+}
+
+/* website logo */
+
+.nav {
+    display: flex;
+}
+ 
+.nav .nav-links {
+    display: flex;
+}
+
+.nav img {
+    float: left;
+    width: 5%;
+    height: auto;
+    padding-top: 10%;
+    padding-left: 8%;
+    /* display: none; */
+}
+
+/* menu button */
+.nav a img {
+    display: none;
+}
+
+/* top - section [START] */
+
+.top-section {
+    display: flex;
+    width: 1005;
+    margin-top: 15%;
+}
+
+.top-section .content {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.top-section .top-section-image img {
+    width: 50%;
+    height: auto;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.badge {
+    background-color: #8245E5;
+    margin-left: 15%;
+    margin-right: 20%;
+}
+
+.badge h1 {
+    color: white;
+    text-align: center;
+    font-family: "Ubuntu-Light";
+    font-weight: 100;
+    font-size: 1rem;
+    padding: 5%;
+}
+
+.top-section .title h1 {
+    color: white;
+    text-align: left;
+    font-family: "Segoe UI Bold";
+    font-size: 2.4rem;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.top-section .title h2 {
+    color: white;
+    text-align: left;
+    font-family: "Segoe UI Italic";
+    font-size: 1rem;
+    font-weight: 100;
+    width: 60%;
+    padding-left: 15%;
+    padding-right: 20%;
+}
+/* top - section [END] */
+
+/* middle - section [START] */
+.middle-section {
+    /* background-color: #8245E5; */
+    width: 80%;
+    height: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 30%;
+}
+
+.middle-section .card {
+    background-color: #1A1A1A;
+}
+
+.middle-section .card:hover {
+    background-color: #8245E5;
+}
+
+.middle-section .card h1 {
+    color: white;
+    text-align: left;
+    font-family: "Segoe UI Bold";
+    font-size: 1.2rem;
+    padding-left: 8%;
+    padding-top: 5%;
+}
+
+.middle-section .card h2 {
+    color: white;
+    text-align: left;
+    font-family: "Ubuntu-Light";
+    font-size: 0.7rem;
+    font-weight: 100;
+    padding-left: 8%;
+}
+
+.middle-section .card p {
+    color: white;
+    text-align: left;
+    font-family: "Segoe UI Italic";
+    font-size: 0.8rem;
+    padding-left: 8%;
+    padding-bottom: 10%;
+}
+
+.middle-section .card img {
+    float: right;
+    padding-right: 8%;
+}
+
+.middle-section .middle-content h1 {
+    color: #808893;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 0.8rem;
+    margin-top: 5rem;
+}
+
+.middle-section .middle-content h2 {
+    color: #fff;
+    text-align: left;
+    font-family: "Segoe UI Bold";
+    font-size: 2rem;
+}
+
+.middle-section .middle-content h3 {
+    color: #fff;
+    text-align: left;
+    font-family: "Segoe UI Italic";
+    font-size: 1.3rem;
+}
+
+.middle-section .middle-content p {
+    color: #737373;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1.2rem;
+}
+/* middle - section [END] */
+
+/* Bottom - section [START] */
+.bottom-section {
+    width: 80%;
+    height: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10%;
+    padding-bottom: 20%;
+}
+
+.bottom-section .top-text h1 {
+    color: #fff;
+    text-align: left;
+    font-family: "Segoe UI Bold";
+    font-size: 2rem;
+}
+
+.bottom-section .top-text p {
+    color: #737373;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1.2rem;
+}
+
+.bottom-section .bottom-text h1 a{
+    color: #8245E5;
+    text-align: left;
+    font-family: "Segoe UI Bold";
+    font-size: 2rem;
+}
+
+.bottom-section .bottom-text p {
+    color: #737373;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1.2rem;
+}
+
+.bottom-section .bottom-text a {
+    color: #8245E5;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1.2rem;
+}
+/* Bottom - section [END] */
+
+/* footer [START] */
+.footer {
+    background-color: #1A1A1A;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3%;
+}
+
+.footer .top-text {
+    width: 80%;
+    height: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 8%;
+}
+
+.footer .top-text h1 {
+    color: white;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 10%;
+}
+
+.footer .top-text a {
+    color: #8245E5;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1.2rem;
+}
+
+.footer .top-text h2 {
+    color: #808893;
+    text-align: left;
+    font-family: "UbuntuMono-Regular";
+    font-size: 1rem;
+    font-weight: 100;
+    margin-top: 20%;
+}
+
+.footer .top-text h3 a {
+    color: #C4C4C4;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Segoe UI";
+    font-size: 1.2rem;
+}
+
+.footer .top-text h4 a {
+    color: #fff;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Segoe UI";
+    font-size: 1.2rem;
+}
+
+.footer p {
+    color: #fff;
+    text-align: center;
+    font-family: "Segoe UI";
+    font-size: 0.8rem;
+    margin-top: 20%;
+    padding-bottom: 10%;
+}
+/* footer [END] */
+
 /* Media queries */
 @media only screen and (max-width:700px) {
 
@@ -43,17 +328,26 @@
         scroll-behavior: smooth;
     }
 
+    .nav {
+        display: flex;
+    }
+
+    .nav .nav-links {
+        display: none;
+    }
+
     /* website logo */
     .nav img {
         float: left;
         width: 12%;
         height: auto;
         padding-top: 10%;
-        padding-left: 10%;
+        padding-left: 8%;
     }
 
     /* menu button */
     .nav a img {
+        display: block;
         float: right;
         width: 5%;
         height: auto;
@@ -62,6 +356,18 @@
     }
 
     /* top - section [START] */
+
+    .top-section {
+        display: inline;
+        margin-top: 15%;
+    }
+
+    .top-section .content {
+        width: 100%;
+        margin-top: 20%;
+        margin-left: 0%;
+    }
+
     .top-section .top-section-image img {
         width: 80%;
         height: auto;
