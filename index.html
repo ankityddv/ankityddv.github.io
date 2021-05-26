@@ -5,6 +5,7 @@
         <meta charset="UTF-8">   
         <title>@ankityddv-Me</title>
         <link rel = "@ankityddv-icon" href = "img/logo-white.svg" type = "image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/homestyle.css">
     </head>
     <body>
@@ -13,7 +14,7 @@
             <!-- nav -->
 
             <div class="nav">
-                <img src="img/logo-white.svg" alt="logo" />
+                <img src="img/logo.png" alt="logo" />
                 <a><img src="img/menu-icon.svg" alt="menu-icon"></a>
             </div>
             
@@ -41,14 +42,14 @@
             <!-- middle - section -->
 
             <div class="middle-section">
-                <div class="card">
+                <div class="card" >
                     <h1>Design</h1>
                     <img src="img/ui-icon.svg">
                     <h2>Create digital products with unique ideas</h2>
                     <p>10 PROJECTS</p>
                 </div>
 
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                     <h1>App-Dev</h1>
                     <img src="img/appdev-icon.svg">
                     <h2>I develop iOS apps with smooth UI </h2>
@@ -63,7 +64,7 @@
                 </div>
 
                 <div class="middle-content">
-                    <h1>Introduce</h1>
+                    <h1>👋 Introduce</h1>
                     <h2>Hello! I am Ankit Yadav</h2>
                     <h3>Every great design begin with an even better story</h3>
                     <p>Since beginning my journey as a iOS Developer nearly 3 years ago. I’ve done remote work for agencies/clients, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use.I’m quitely confident and prepetually working on improving my chopsone design problems at a time.</p>
@@ -91,13 +92,29 @@
             <div class="footer">
                 <div class="top-text">
                     <h1>Let’s start something together. <br><br> Start by <a href="https://www.twitter.com/ankityddv">saying hi</a></h1>
-                    <h2>Introduction</h2>
+                    <h2>🤝 Social</h2>
                     <h3><a href="https://www.twitter.com/ankityddv">@ankityddv</a></h3>
                     <h4><a href="mailto:yadavankit840@gmail.com">yadavankit840@gmail.com</a></h4>
-                    <p>© 2020. All rights reserved.</p>
+                    <p>© 2021. All rights reserved.</p>
                 </div>
             </div>
             
         </section>
+
+        <!-- AOS [for animating on scroll]-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+                offset: 120, // offset (in px) from the original trigger point
+                delay: 0, // values from 0 to 3000, with step 50ms
+                duration: 3, // values from 0 to 3000, with step 50ms
+                easing: 'ease', // default easing for AOS animations
+                once: false, // whether animation should happen only once - while scrolling down
+                mirror: false, // whether elements should animate out while scrolling past them
+                anchorPlacement: 'top-bottom',
+            });
+        </script>
+
     </body>
 </html>
