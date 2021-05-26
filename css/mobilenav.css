@@ -1,3 +1,10 @@
+/* Segoe UI Bold */
+@font-face {
+    font-family: 'Segoe UI Bold';
+    font-style: bold;
+    font-weight: 100;
+    src: local('Segoe UI Bold'), url('../Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
+}
 /* Ubuntu Mono */
 @font-face {
     font-family: 'UbuntuMono-Regular';
@@ -13,6 +20,33 @@ html,body {
     padding: 0px;
     overflow-x: hidden; 
     scroll-behavior: smooth;
+}
+
+.desktopview {
+    width: 100%;
+    padding-top: 10%;
+}
+
+.desktopview h1 {
+    font-family: "Segoe UI Bold";
+    color: white;
+    font-weight: 100;
+    text-align: center;
+}
+
+.desktopview h2 {
+    font-family: "UbuntuMono-Regular";
+    color: #737373;
+    font-weight: 100;
+    text-align: center;
+}
+
+.dismissBttn {
+    display: none;
+}
+
+.nav {
+    display: none;
 }
 
 @media only screen and (max-width:700px) {
