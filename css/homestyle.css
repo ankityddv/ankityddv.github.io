@@ -75,7 +75,7 @@ html,body {
     padding-right: 90%;
 }
 
-.nav .nav-links li a:hover{
+.nav .nav-links li a:hover {
     font-family: "UbuntuMono-Regular";
     color: #995AFF;
     text-decoration: none;
@@ -85,7 +85,6 @@ html,body {
 .nav .menu {
     display: none;
 }
-
 
 /* top - section [START] */
 
