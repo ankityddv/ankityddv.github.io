@@ -86,11 +86,22 @@ a {
 
 .work-experience ul li::before, .projects ul li::before {
     content: "👉🏻";
-    display: flexbox; /* Needed to add space between the bullet and the text */ 
-    width: 0.1em; /* Also needed for space (tweak if needed) */
-    margin-left: -2em; /* Also needed for space (tweak if needed) */
+    width: 0.1em;
+    margin-left: -2em;
     margin-right: 1%;
-  }
+}
+
+.button {
+    margin-top: 10%;
+    background-color: #8245E5;
+    width: 20%;
+    height: 10%;
+}
+
+.button h2 {
+    text-align: center;
+    padding: 8%;
+}
 
 /* Media queries */
 @media only screen and (max-width:700px) {
@@ -103,5 +114,23 @@ a {
 
     .skills img {
         width: 30%;
+    }
+
+    .work-experience ul li::before, .projects ul li::before {
+        margin-right: 5%;
+    }
+
+    .button {
+        margin-top: 10%;
+        background-color: #8245E5;
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+        height: 10%;
+    }
+    
+    .button h2 {
+        text-align: center;
+        padding: 8%;
     }
 }
