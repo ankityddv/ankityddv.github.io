@@ -72,11 +72,21 @@
 }
 
 .middle-section .card {
+    display: flex;
     background-color: #1A1A1A;
     width: 100%;
+    margin-bottom: 5%;
 }
 
-.middle-section .card h1 {
+.middle-section .card .card-content {
+    width: 70%;
+}
+
+.middle-section .card .card-emoji {
+    width: 30%;
+}
+
+.middle-section .card .card-content h1 {
     color: white;
     text-align: left;
     font-family: "Segoe UI Bold";
@@ -86,7 +96,7 @@
     padding-top: 5%;
 }
 
-.middle-section .card h2 {
+.middle-section .card .card-content h2 {
     color: white;
     text-align: left;
     font-family: "Ubuntu-Light";
@@ -95,7 +105,7 @@
     padding-left: 8%;
 }
 
-.middle-section .card p {
+.middle-section .card .card-content p {
     color: white;
     text-align: left;
     font-family: "Segoe UI Italic";
@@ -104,9 +114,12 @@
     padding-bottom: 10%;
 }
 
-.middle-section .card img {
+.middle-section .card .card-emoji h3 {
     float: right;
-    padding-right: 8%;
+    font-size: larger;
+    margin-top: 40%;
+    margin-bottom: 40%;
+    margin-right: 30%;
 }
 
 .middle-section .middle-content {
@@ -259,52 +272,13 @@
     .middle-section {
         display: block;
         width: 80%;
-        height: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
         margin-top: 30%;
     }
 
     .middle-section .cards {
         width: 100%;
     }
-
-    .middle-section .card {
-        background-color: #1A1A1A;
-    }
-
-    .middle-section .card h1 {
-        color: white;
-        text-align: left;
-        font-family: "Segoe UI Bold";
-        font-size: 1.2rem;
-        padding-left: 8%;
-        padding-top: 5%;
-    }
-
-    .middle-section .card h2 {
-        color: white;
-        text-align: left;
-        font-family: "Ubuntu-Light";
-        font-size: 0.7rem;
-        font-weight: 100;
-        padding-left: 8%;
-    }
-
-    .middle-section .card p {
-        color: white;
-        text-align: left;
-        font-family: "Segoe UI Italic";
-        font-size: 0.8rem;
-        padding-left: 8%;
-        padding-bottom: 10%;
-    }
-
-    .middle-section .card img {
-        float: right;
-        padding-right: 8%;
-    }
-
+    
     .middle-section .middle-content {
         width: 100%;
         padding-left: 0%;
