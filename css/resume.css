@@ -1,0 +1,107 @@
+.cover {
+    width: 100%;
+}
+
+.cover img {
+    width: 50%;
+    padding-left: 23%;
+    padding-right: 27%;
+}
+
+.content {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.education, .work-experience, .skills, .projects, .certificates, .languages {
+    margin-top: 7%;
+}
+
+.languages{
+    padding-bottom: 10%;
+}
+
+.language-content {
+    display: flex;
+}
+
+.language-block2 {
+    padding-left: 10%;
+}
+
+.certificate-block {
+    padding-top: 1.3%;
+}
+
+h1 {
+    font-family: 'Segoe UI Bold';
+    color: white;
+    font-weight: 100;
+    font-size: larger;
+}
+
+h2 {
+    font-family: 'Segoe UI';
+    color: white;
+    font-weight: 100;
+    font-size: medium;
+}
+
+h3 {
+    font-family: 'Segoe UI';
+    color: #8245E5;
+    font-weight: 100;
+    font-size: medium;
+}
+
+p {
+    font-family: 'UbuntuMono-Regular';
+    color: #808893;
+    font-weight: 100;
+}
+
+.skills img {
+    width: 7%;
+    height: auto;
+    padding-right: 1.5%;
+}
+
+a {
+    font-family: 'UbuntuMono-Regular';
+    color: #8245E5;
+    font-weight: 100;
+    padding-right: 10%;
+}
+
+.work-experience ul,.projects ul {
+    list-style: none; 
+}
+
+.work-experience ul li, .projects ul li {
+    font-family: 'UbuntuMono-Regular';
+    color: #808893;
+    font-weight: 100;
+}
+
+.work-experience ul li::before, .projects ul li::before {
+    content: "👉🏻";
+    display: flexbox; /* Needed to add space between the bullet and the text */ 
+    width: 0.1em; /* Also needed for space (tweak if needed) */
+    margin-left: -2em; /* Also needed for space (tweak if needed) */
+    margin-right: 1%;
+  }
+
+/* Media queries */
+@media only screen and (max-width:700px) {
+
+    .cover img {
+        width: 80%;
+        padding-left: 7%;
+        padding-right: 13%;
+    }
+
+    .skills img {
+        width: 30%;
+    }
+}

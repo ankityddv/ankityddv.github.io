@@ -1,37 +1,3 @@
-/* Initialise font faces */
-@font-face {
-    font-family: 'Segoe UI';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Regular'), url('Fonts/Segoe/Segoe\ UI.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Segoe UI Italic';
-    font-style: Italic;
-    font-weight: 100;
-    src: local('Segoe UI Italic'), url('Fonts/Segoe/Segoe\ UI\ Italic.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Segoe UI Bold';
-    font-style: bold;
-    font-weight: 100;
-    src: local('Segoe UI Bold'), url('Fonts/Segoe/Segoe\ UI\ Bold.woff') format('woff');
-}
-    
-@font-face {
-    font-family: 'Segoe UI Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Bold Italic'), url('Fonts/Segoe/Segoe\ UI\ Bold\ Italic.woff') format('woff');
-}
-
-
-body {
-    background-color: #101010;
-}
-
 /* blog-detail page [START] */
 
 /* navigation bar logo */
