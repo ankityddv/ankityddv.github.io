@@ -2,16 +2,43 @@
     width: 100%;
 }
 
-.cover img {
+.cover .images {
+    position: relative;
+    width: 100%;
+}
+.cover .images img {
+    position: absolute;
     width: 50%;
     padding-left: 23%;
     padding-right: 27%;
+    height: auto;
+    left: 0;
+    filter: grayscale(100);
+}
+
+.cover img.headerimg:hover{
+    filter: grayscale(0);
+    transition: filter 1s ease-in-out;
 }
 
 .content {
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 50%;
+}
+
+.content .about-me span {
+    font-family: 'UbuntuMono-Regular';
+    color: #808893;
+    font-size: medium;
+    font-weight: 100;
+}
+.content p {
+    font-family: 'UbuntuMono-Regular';
+    color: #808893;
+    font-size: small;
+    font-weight: 100;
 }
 
 .education, .work-experience, .skills, .projects, .certificates, .languages {
@@ -38,7 +65,7 @@ h1 {
     font-family: 'Segoe UI Bold';
     color: white;
     font-weight: 100;
-    font-size: larger;
+    font-size: 1.8rem;
 }
 
 h2 {
@@ -106,10 +133,18 @@ a {
 /* Media queries */
 @media only screen and (max-width:700px) {
 
-    .cover img {
+    .cover .images img {
         width: 80%;
         padding-left: 7%;
         padding-right: 13%;
+    }
+
+    .content {
+        margin-top: 80%;
+    }
+    
+    .cover img.headerimg:hover{
+        filter: grayscale(100);
     }
 
     .skills img {

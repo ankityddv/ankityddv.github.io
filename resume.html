@@ -35,23 +35,24 @@
 
         <!-- Cover [START] -->
         <section class="cover">
-            <img src="img/resume-cover.png">
+            <div class="images">
+                <img src="img/resume-cover-color.png" class="headerimg">
+            </div>
         </section>
         <!-- Cover [END] -->
 
         <!-- Content [START] -->
-        <section class="content">
-
+        <section data-scroll class="content">
             <section class="about-me">
                 <p>👋🏻 ABOUT ME</p>
                 <h1>Hello! I am Ankit Yadav</h1>
-                <p>A 3yo mobile dev in designing, developing, testing and maintaining apps on iOS. Passionate about building products for a mobile-first world with customer-obsessive problem-solving.
+                <span>A 3yo mobile dev in designing, developing, testing and maintaining apps on iOS. Passionate about building products for a mobile-first world with customer-obsessive problem-solving.
                     <br> <br>
-                    I’m pursuing my Under grad in Computer Science at Vellore Institute of Technology, Vellore. I am open to Software Developer Intern roles. Feel free to reach out to me.</p>
+                    I’m pursuing my Under grad in Computer Science at Vellore Institute of Technology, Vellore. I am open to Software Developer Intern roles. Feel free to reach out to me.</span>
             </section>
 
             <section class="education">
-                <p>📚 EDUCATION</p>
+                <p>🎓 EDUCATION</p>
                 <h1>B.Tech - Bachelor of Technology, Computer Science (3rd Year)</h1>
                 <h2>Vellore Institute of Technology (VIT)</h2>
                 <h3>2018 - 2022</h3>    
@@ -228,6 +229,14 @@
             </div>
         </section>
          <!-- Footer [END] -->
+
+         <script src="js/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".headerimg"), {
+            max: 3,
+            speed: 1
+        });
+        </script>
     </body>
 
 </html>

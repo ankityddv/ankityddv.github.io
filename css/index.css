@@ -76,6 +76,7 @@
     background-color: #1A1A1A;
     width: 100%;
     margin-bottom: 5%;
+    border-radius: 1rem;
 }
 
 .middle-section .card .card-content {
@@ -116,7 +117,7 @@
 
 .middle-section .card .card-emoji h3 {
     float: right;
-    font-size: larger;
+    font-size: 2rem;
     margin-top: 40%;
     margin-bottom: 40%;
     margin-right: 30%;
@@ -134,6 +135,7 @@
     text-align: left;
     font-family: "UbuntuMono-Regular";
     font-size: 0.8rem;
+    font-weight: 100;
     margin-top: 5rem;
 }
 
@@ -161,12 +163,75 @@
 
 /* Bottom - section [START] */
 .bottom-section {
+    display: flex;
     width: 80%;
-    height: 80%;
+    height: auto;
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 10%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
+}
+
+.bottom-section .bottom-left, .bottom-section .bottom-right {
+    width: 50%;
+}
+
+.bottom-section .bottom-left .product-card, .bottom-section .bottom-right .product-card {
+    background-color: #1A1A1A;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 80%;
+    height: auto;
+    border-radius: 3rem;
+}
+
+.bottom-section .bottom-right .product-card {
+    margin-left: 20%;
+    width: 80%;
+    height: auto;
+}
+
+
+.bottom-section .bottom-left .product-card h1, .bottom-section .bottom-right .product-card h1 {
+    font-family: "UbuntuMono-Regular";
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: #737373;
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+}
+
+.bottom-section .bottom-left .product-card h2, .bottom-section .bottom-right .product-card h2 {
+    font-family: "Segoe UI Bold";
+    font-weight: 100;
+    font-size: 1.7rem;
+    color: #fff;
+    text-align: left;
+    margin-left: 10%;
+    padding-right: 10%;
+}
+
+.bottom-section .bottom-left .product-card h3, .bottom-section .bottom-right .product-card h3 {
+    font-family: "Segoe UI";
+    font-weight: 100;
+    font-size: 1rem;
+    color: #fff;
+    text-align: left;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
+.bottom-section .bottom-left .product-card img, .bottom-section .bottom-right .product-card img {
+    width: 30%;
+    display: block;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
 }
 
 .bottom-section .top-text h1 {
@@ -195,6 +260,7 @@
     text-align: left;
     font-family: "UbuntuMono-Regular";
     font-size: 1.2rem;
+    padding-right: 10%;
 }
 
 .bottom-section .bottom-text a {
@@ -209,7 +275,6 @@
 @media only screen and (max-width:700px) {
 
     /* top - section [START] */
-
     .top-section {
         display: inline;
         margin-top: 15%;
@@ -218,19 +283,16 @@
     .top-section .content {
         width: 100%;
         margin-top: 5%;
-        margin-left: 0%;
     }
 
     .top-section .top-section-image img {
         width: 80%;
-        height: auto;
         padding-left: 15%;
         padding-top: 10%;
         padding-right: 5%;
     }
 
     .badge {
-        background-color: #995AFF;
         width: 60%;
         height: 30%;
         margin-left: 20%;
@@ -238,33 +300,18 @@
     }
 
     .badge h1 {
-        color: white;
-        text-align: center;
-        font-family: "Ubuntu-Light";
-        font-weight: 100;
-        font-size: 0.8rem;
         padding-top: 5%;
         padding-bottom: 5%;
     }
 
     .top-section .title h1 {
-        color: white;
         text-align: center;
-        font-family: "Segoe UI Bold";
-        font-size: 2.4rem;
-        width: 70%;
-        padding-left: 15%;
-        padding-right: 15%;
     }
 
     .top-section .title h2 {
-        color: white;
         text-align: center;
-        font-family: "Segoe UI Italic";
-        font-size: 1rem;
         width: 60%;
         padding-left: 20%;
-        padding-right: 20%;
     }
     /* top - section [END] */
 
@@ -284,80 +331,29 @@
         padding-left: 0%;
         padding-right: 0%;
     }
-
-    .middle-section .middle-content h1 {
-        color: #808893;
-        text-align: left;
-        font-family: "UbuntuMono-Regular";
-        font-size: 0.8rem;
-        margin-top: 5rem;
-    }
-
-    .middle-section .middle-content h2 {
-        color: #fff;
-        text-align: left;
-        font-family: "Segoe UI Bold";
-        font-size: 2rem;
-    }
-    
-    .middle-section .middle-content h3 {
-        color: #fff;
-        text-align: left;
-        font-family: "Segoe UI Italic";
-        font-size: 1.3rem;
-    }
-
-    .middle-section .middle-content p {
-        color: #737373;
-        text-align: left;
-        font-family: "UbuntuMono-Regular";
-        font-size: 1.2rem;
-    }
     /* middle - section [END] */
 
     /* Bottom - section [START] */
     .bottom-section {
-        width: 80%;
-        height: 80%;
-        padding-left: 10%;
-        padding-right: 10%;
-        margin-top: 10%;
-        padding-bottom: 20%;
+        display: block;
     }
 
-    .bottom-section .top-text h1 {
-        color: #fff;
-        text-align: left;
-        font-family: "Segoe UI Bold";
-        font-size: 2rem;
+    .bottom-section .bottom-left, .bottom-section .bottom-right {
+        width: 100%;
+    }
+    
+    .bottom-section .bottom-left .product-card, .bottom-section .bottom-right .product-card {
+        width: 100%;
+        border-radius: 2rem;
     }
 
-    .bottom-section .top-text p {
-        color: #737373;
-        text-align: left;
-        font-family: "UbuntuMono-Regular";
-        font-size: 1.2rem;
-    }
-
-    .bottom-section .bottom-text h1 a{
-        color: #995AFF;
-        text-align: left;
-        font-family: "Segoe UI Bold";
-        font-size: 2rem;
+    .bottom-section .bottom-right .product-card {
+        margin-left: 0%;
+        width: 100%;
     }
 
     .bottom-section .bottom-text p {
-        color: #737373;
-        text-align: left;
-        font-family: "UbuntuMono-Regular";
-        font-size: 1.2rem;
-    }
-
-    .bottom-section .bottom-text a {
-        color: #995AFF;
-        text-align: left;
-        font-family: "UbuntuMono-Regular";
-        font-size: 1.2rem;
+        padding-right: 0%;
     }
     /* Bottom - section [END] */
 }
