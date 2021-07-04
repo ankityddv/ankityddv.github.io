@@ -8,7 +8,7 @@
 
 .top-section .content {
     width: 50%;
-    margin-left: 0%;
+    margin-left: 3.5%;
     padding-top: 10%;
 }
 
@@ -292,6 +292,7 @@
     .top-section .content {
         width: 100%;
         margin-top: 5%;
+        margin-left: 0%;
     }
 
     .top-section .top-section-image img {

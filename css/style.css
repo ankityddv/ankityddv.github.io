@@ -169,6 +169,7 @@ html,body {
     font-family: "UbuntuMono-Regular";
     color: #995AFF;
     text-decoration: none;
+    transition: all 0.3s ease-in-out;
 }
 
 .copyright p {
