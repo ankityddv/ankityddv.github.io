@@ -112,7 +112,7 @@ a {
 }
 
 .work-experience ul li::before, .projects ul li::before {
-    content: "👉🏻";
+    content: "-";
     width: 0.1em;
     margin-left: -2em;
     margin-right: 1%;
