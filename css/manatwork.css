@@ -15,7 +15,7 @@
 }
 
 .content h1 {
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-weight: 100;
     color: white;
     text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .content h2 {
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-weight: 100;
     color: #737373;
     text-align: center;
@@ -33,7 +33,7 @@
 }
 
 @media only screen and (max-width:700px) {
-    
+
     .image {
         display: block;
         width: 100%;
@@ -43,9 +43,9 @@
     .content {
         width: 100%;
     }
-    
+
     .content h1 {
-        font-family: "Segoe UI Bold";
+        font-family: "Termina Bold";
         font-weight: 100;
         color: white;
         text-align: center;
@@ -53,9 +53,9 @@
         margin-left: 15%;
         margin-right: 15%;
     }
-    
+
     .content h2 {
-        font-family: "UbuntuMono-Regular";
+        font-family: "LetteraTextLL Regular";
         font-weight: 100;
         font-size: medium;
         color: #737373;

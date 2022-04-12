@@ -4,14 +4,14 @@
 }
 
 .desktopview h1 {
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     color: white;
     font-weight: 100;
     text-align: center;
 }
 
 .desktopview h2 {
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     color: #737373;
     font-weight: 100;
     text-align: center;
@@ -37,7 +37,7 @@
         margin-top: 15%;
         margin-right: 7%;
     }
-    
+
     .nav {
         display: block;
         width: 100%;
@@ -50,14 +50,14 @@
         padding-right: 25%;
         margin-top: 40%;
     }
-    
-    .nav .links li{
+
+    .nav .links li {
         text-align: center;
         padding-bottom: 30%;
     }
-    
+
     .nav .links li a {
-        font-family: "UbuntuMono-Regular";
+        font-family: "LetteraTextLL Regular";
         color: white;
         text-decoration: none;
     }

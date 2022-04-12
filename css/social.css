@@ -3,18 +3,18 @@
 }
 
 .header h1 {
-    font-family: 'Segoe UI Bold';
+    font-family: 'Termina Bold';
     font-weight: 100;
     text-align: center;
     color: white;
 }
 
 .header h1 span {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     font-size: small;
     font-weight: 100;
     text-align: center;
-    color: wheat;   
+    color: wheat;
 }
 
 .links {
@@ -26,8 +26,7 @@
 }
 
 .links a h1 {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     text-align: center;
     color: white;
 }
-

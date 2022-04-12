@@ -1,4 +1,4 @@
- /* top - section [START] */
+/* top - section [START] */
 
 .top-section {
     display: flex;
@@ -29,7 +29,7 @@
 .badge h1 {
     color: white;
     text-align: center;
-    font-family: "Ubuntu-Light";
+    font-family: "LetteraTextLL Regular";
     font-weight: 100;
     font-size: 0.8rem;
     padding: 5%;
@@ -38,7 +38,7 @@
 .top-section .title h1 {
     color: white;
     text-align: left;
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-size: 2.4rem;
     width: 70%;
     padding-left: 15%;
@@ -48,13 +48,14 @@
 .top-section .title h2 {
     color: white;
     text-align: left;
-    font-family: "Segoe UI Italic";
+    font-family: "LetteraTextLL Italic";
     font-size: 1rem;
     font-weight: 100;
     width: 60%;
     padding-left: 15%;
     padding-right: 20%;
 }
+
 /* top - section [END] */
 
 /* middle - section [START] */
@@ -91,7 +92,7 @@
 .middle-section .card .card-content h1 {
     color: white;
     text-align: left;
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-weight: 100;
     font-size: 1.2rem;
     padding-left: 8%;
@@ -102,7 +103,7 @@
 .middle-section .card .card-content h2 {
     color: white;
     text-align: left;
-    font-family: "Ubuntu-Light";
+    font-family: "LetteraTextLL Regular";
     font-size: 0.7rem;
     font-weight: 100;
     padding-left: 8%;
@@ -112,7 +113,7 @@
 .middle-section .card .card-content p {
     color: white;
     text-align: left;
-    font-family: "Segoe UI Italic";
+    font-family: "LetteraTextLL Italic";
     font-size: 0.8rem;
     padding-left: 8%;
     padding-bottom: 10%;
@@ -138,7 +139,7 @@
 .middle-section .middle-content h1 {
     color: #808893;
     text-align: left;
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-size: 0.8rem;
     font-weight: 100;
     margin-top: 5rem;
@@ -147,23 +148,24 @@
 .middle-section .middle-content h2 {
     color: #fff;
     text-align: left;
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-size: 2rem;
 }
 
 .middle-section .middle-content h3 {
     color: #fff;
     text-align: left;
-    font-family: "Segoe UI Italic";
+    font-family: "LetteraTextLL Italic";
     font-size: 1.3rem;
 }
 
 .middle-section .middle-content p {
     color: #737373;
     text-align: left;
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-size: 1.2rem;
 }
+
 /* middle - section [END] */
 
 /* Bottom - section [START] */
@@ -177,11 +179,13 @@
     padding-bottom: 10%;
 }
 
-.bottom-section .bottom-left, .bottom-section .bottom-right {
+.bottom-section .bottom-left,
+.bottom-section .bottom-right {
     width: 50%;
 }
 
-.bottom-section .bottom-left .product-card, .bottom-section .bottom-right .product-card {
+.bottom-section .bottom-left .product-card,
+.bottom-section .bottom-right .product-card {
     background-color: #1A1A1A;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -197,8 +201,9 @@
     height: auto;
 }
 
-.bottom-section .bottom-left .product-card h1, .bottom-section .bottom-right .product-card h1 {
-    font-family: "UbuntuMono-Regular";
+.bottom-section .bottom-left .product-card h1,
+.bottom-section .bottom-right .product-card h1 {
+    font-family: "LetteraTextLL Regular";
     font-weight: 100;
     font-size: 0.8rem;
     color: #737373;
@@ -209,8 +214,9 @@
     transform: translateZ(20px);
 }
 
-.bottom-section .bottom-left .product-card h2, .bottom-section .bottom-right .product-card h2 {
-    font-family: "Segoe UI Bold";
+.bottom-section .bottom-left .product-card h2,
+.bottom-section .bottom-right .product-card h2 {
+    font-family: "LetteraTextLL Regular";
     font-weight: 100;
     font-size: 1.7rem;
     color: #fff;
@@ -220,8 +226,9 @@
     transform: translateZ(20px);
 }
 
-.bottom-section .bottom-left .product-card h3, .bottom-section .bottom-right .product-card h3 {
-    font-family: "Segoe UI";
+.bottom-section .bottom-left .product-card h3,
+.bottom-section .bottom-right .product-card h3 {
+    font-family: "LetteraTextLL Regular";
     font-weight: 100;
     font-size: 1rem;
     color: #fff;
@@ -233,7 +240,8 @@
     transform: translateZ(20px);
 }
 
-.bottom-section .bottom-left .product-card img, .bottom-section .bottom-right .product-card img {
+.bottom-section .bottom-left .product-card img,
+.bottom-section .bottom-right .product-card img {
     width: 30%;
     display: block;
     margin-top: 10%;
@@ -246,28 +254,28 @@
 .bottom-section .top-text h1 {
     color: #fff;
     text-align: left;
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-size: 2rem;
 }
 
 .bottom-section .top-text p {
     color: #737373;
     text-align: left;
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-size: 1.2rem;
 }
 
-.bottom-section .bottom-text h1 a{
+.bottom-section .bottom-text h1 a {
     color: #995AFF;
     text-align: left;
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     font-size: 2rem;
 }
 
 .bottom-section .bottom-text p {
     color: #737373;
     text-align: left;
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-size: 1.2rem;
     padding-right: 10%;
 }
@@ -275,9 +283,10 @@
 .bottom-section .bottom-text a {
     color: #995AFF;
     text-align: left;
-    font-family: "UbuntuMono-Regular";
+    font-family: "LetteraTextLL Regular";
     font-size: 1.2rem;
 }
+
 /* Bottom - section [END] */
 
 /* Media queries */
@@ -323,6 +332,7 @@
         width: 60%;
         padding-left: 20%;
     }
+
     /* top - section [END] */
 
     /* middle - section [START] */
@@ -355,12 +365,13 @@
     .middle-section .card .card-emoji h3 {
         transform: none;
     }
-    
+
     .middle-section .middle-content {
         width: 100%;
         padding-left: 0%;
         padding-right: 0%;
     }
+
     /* middle - section [END] */
 
     /* Bottom - section [START] */
@@ -368,11 +379,13 @@
         display: block;
     }
 
-    .bottom-section .bottom-left, .bottom-section .bottom-right {
+    .bottom-section .bottom-left,
+    .bottom-section .bottom-right {
         width: 100%;
     }
-    
-    .bottom-section .bottom-left .product-card, .bottom-section .bottom-right .product-card {
+
+    .bottom-section .bottom-left .product-card,
+    .bottom-section .bottom-right .product-card {
         width: 100%;
         border-radius: 2rem;
     }
@@ -380,25 +393,32 @@
     .bottom-section .bottom-right .product-card {
         margin-left: 0%;
         width: 100%;
-        transform-style:flat;
+        transform-style: flat;
     }
 
     .bottom-section .bottom-text p {
         padding-right: 0%;
     }
 
-    .bottom-section .bottom-left .product-card h1, .bottom-section .bottom-right .product-card h1 {
+    .bottom-section .bottom-left .product-card h1,
+    .bottom-section .bottom-right .product-card h1 {
         transform: none;
     }
 
-    .bottom-section .bottom-left .product-card h2, .bottom-section .bottom-right .product-card h2 {
+    .bottom-section .bottom-left .product-card h2,
+    .bottom-section .bottom-right .product-card h2 {
         transform: none;
     }
-    .bottom-section .bottom-left .product-card h3, .bottom-section .bottom-right .product-card h3 {
+
+    .bottom-section .bottom-left .product-card h3,
+    .bottom-section .bottom-right .product-card h3 {
         transform: none;
     }
-    .bottom-section .bottom-left .product-card img, .bottom-section .bottom-right .product-card img {
+
+    .bottom-section .bottom-left .product-card img,
+    .bottom-section .bottom-right .product-card img {
         transform: none;
     }
+
     /* Bottom - section [END] */
 }

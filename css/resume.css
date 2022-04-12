@@ -6,6 +6,7 @@
     position: relative;
     width: 100%;
 }
+
 .cover .images img {
     position: absolute;
     width: 50%;
@@ -16,7 +17,7 @@
     filter: grayscale(100);
 }
 
-.cover img.headerimg:hover{
+.cover img.headerimg:hover {
     filter: grayscale(0);
     transition: filter 1s ease-in-out;
 }
@@ -29,23 +30,29 @@
 }
 
 .content .about-me span {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     color: #808893;
     font-size: medium;
     font-weight: 100;
 }
+
 .content p {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     color: #808893;
     font-size: small;
     font-weight: 100;
 }
 
-.education, .work-experience, .skills, .projects, .certificates, .languages {
+.education,
+.work-experience,
+.skills,
+.projects,
+.certificates,
+.languages {
     margin-top: 7%;
 }
 
-.languages{
+.languages {
     padding-bottom: 10%;
 }
 
@@ -62,28 +69,28 @@
 }
 
 h1 {
-    font-family: 'Segoe UI Bold';
+    font-family: 'Termina Bold';
     color: white;
     font-weight: 100;
     font-size: 1.8rem;
 }
 
 h2 {
-    font-family: 'Segoe UI';
+    font-family: 'LetteraTextLL Regular';
     color: white;
     font-weight: 100;
     font-size: medium;
 }
 
 h3 {
-    font-family: 'Segoe UI';
+    font-family: 'LetteraTextLL Regular';
     color: #8245E5;
     font-weight: 100;
     font-size: medium;
 }
 
 p {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     color: #808893;
     font-weight: 100;
 }
@@ -95,23 +102,26 @@ p {
 }
 
 a {
-    font-family: 'UbuntuMono-Regular';
+    font-family: 'LetteraTextLL Regular';
     color: #8245E5;
     font-weight: 100;
     padding-right: 10%;
 }
 
-.work-experience ul,.projects ul {
-    list-style: none; 
+.work-experience ul,
+.projects ul {
+    list-style: none;
 }
 
-.work-experience ul li, .projects ul li {
-    font-family: 'UbuntuMono-Regular';
+.work-experience ul li,
+.projects ul li {
+    font-family: 'LetteraTextLL Regular';
     color: #808893;
     font-weight: 100;
 }
 
-.work-experience ul li::before, .projects ul li::before {
+.work-experience ul li::before,
+.projects ul li::before {
     content: "-";
     width: 0.1em;
     margin-left: -2em;
@@ -143,8 +153,8 @@ a {
     .content {
         margin-top: 80%;
     }
-    
-    .cover img.headerimg:hover{
+
+    .cover img.headerimg:hover {
         filter: grayscale(100);
     }
 
@@ -152,7 +162,8 @@ a {
         width: 30%;
     }
 
-    .work-experience ul li::before, .projects ul li::before {
+    .work-experience ul li::before,
+    .projects ul li::before {
         margin-right: 5%;
     }
 
@@ -164,7 +175,7 @@ a {
         margin-right: 20%;
         height: 10%;
     }
-    
+
     .button h2 {
         text-align: center;
         padding: 8%;

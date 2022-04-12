@@ -23,7 +23,7 @@
 }
 
 .content .title h1 {
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     color: #fff;
     font-size: 4rem;
     padding-right: 8.6%;
@@ -35,13 +35,14 @@
     padding-left: 8.6%;
     padding-right: 10%;
 }
+
 .content .description p {
-    font-family: "Segoe UI Regular";
+    font-family: "LetteraTextLL Regular";
     color: #808893;
     font-size: 2.5rem;
 }
 
-.shareBttn a{
+.shareBttn a {
     display: none;
 }
 
@@ -52,7 +53,7 @@
 }
 
 .content .paragraph p {
-    font-family: "Segoe UI Regular";
+    font-family: "LetteraTextLL Regular";
     color: #fff;
     font-size: 1.5rem;
 }
@@ -106,7 +107,7 @@
 
 .blogBox .creator h1 {
     float: right;
-    font-family: "Segoe UI Regular";
+    font-family: "LetteraTextLL Regular";
     color: white;
     font-size: 1.2rem;
     margin-left: 15%;
@@ -115,7 +116,7 @@
 
 .blogBox .creator p {
     float: right;
-    font-family: "Segoe UI Regular";
+    font-family: "LetteraTextLL Regular";
     color: white;
     font-size: 1.2rem;
     margin-left: 15%;
@@ -133,7 +134,7 @@
 }
 
 .blogBox h1 {
-    font-family: "Segoe UI Bold";
+    font-family: "Termina Bold";
     color: white;
     font-size: 1.2rem;
     margin-left: 10%;
@@ -145,15 +146,15 @@
 /* Media queries */
 @media only screen and (max-width:700px) {
 
-    
-    html,body
-    {
+
+    html,
+    body {
         background-color: #101010;
         width: 100%;
         height: 100%;
         margin: 0px;
         padding: 0px;
-        overflow-x: hidden; 
+        overflow-x: hidden;
     }
 
     /* navigation bar logo */
@@ -179,14 +180,14 @@
     }
 
     .content .title h1 {
-        font-family: "Segoe UI Bold";
+        font-family: "Termina Bold";
         color: #fff;
         font-size: 3.5rem;
         padding-right: 7%;
     }
 
     .content .paragraph h2 {
-        font-family: "Segoe UI Bold";
+        font-family: "Termina Bold";
         color: #fff;
         font-size: 1.8rem;
         padding-top: 2%;
@@ -205,16 +206,17 @@
         padding-left: 7%;
         padding-right: 7%;
     }
+
     .content .description p {
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         color: #808893;
         font-size: 2rem;
     }
 
     .shareBttn a {
-        display:unset;
+        display: unset;
         color: #fff;
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         background-color: #13161d;
         width: 5rem;
         height: 4rem;
@@ -233,7 +235,7 @@
     }
 
     .content .paragraph p {
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         color: #fff;
         font-size: 1.2rem;
     }
@@ -243,7 +245,7 @@
     }
 
     li {
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         font-size: 1.2rem;
         color: #fff;
         margin-top: 7%;
@@ -251,7 +253,7 @@
 
     /* callout box on right */
 
-    .codesnippet{
+    .codesnippet {
         background-color: #13161d;
         padding-top: 1%;
         padding-bottom: 1%;
@@ -261,8 +263,9 @@
     }
 
     .codesnippet p {
-        font-family: "Segoe UI Bold";
+        font-family: "Termina Bold";
     }
+
     .content .callout {
         width: 15rem;
         height: 20rem;
@@ -312,7 +315,7 @@
     .blogBox .creator h1 {
         text-decoration: none;
         float: right;
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         color: white;
         font-size: 1.2rem;
         margin-right: 0%;
@@ -322,7 +325,7 @@
 
     .blogBox .creator p {
         float: right;
-        font-family: "Segoe UI Regular";
+        font-family: "LetteraTextLL Regular";
         color: white;
         font-size: 1.2rem;
         margin-left: 10%;
@@ -339,7 +342,7 @@
     }
 
     .blogBox h1 {
-        font-family: "Segoe UI Bold";
+        font-family: "Termina Bold";
         color: white;
         font-size: 1.2rem;
         margin-left: 10%;
