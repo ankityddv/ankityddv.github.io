@@ -12,27 +12,38 @@
     padding-top: 10%;
 }
 
+.top-section .top-section-image {
+    width: 50%;
+}
+
 .top-section .top-section-image img {
-    width: 70%;
+    width: 80%;
     height: auto;
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-right: 10%;
+    margin-top: -5%;
 }
 
 .badge {
-    background-color: #995AFF;
-    width: 40%;
+    background-color: #EDD348;
+    border: none;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    border-radius: 10px;
     margin-left: 15%;
     margin-right: 20%;
+    width: 30%;
 }
 
 .badge h1 {
-    color: white;
+    color: black;
     text-align: center;
     font-family: "LetteraTextLL Regular";
     font-weight: 100;
-    font-size: 0.8rem;
-    padding: 5%;
+    font-size: 1rem;
+    padding: 0%;
 }
 
 .top-section .title h1 {
@@ -104,7 +115,7 @@
     color: white;
     text-align: left;
     font-family: "LetteraTextLL Regular";
-    font-size: 0.7rem;
+    font-size: 1rem;
     font-weight: 100;
     padding-left: 8%;
     transform: translateZ(10px);
@@ -156,13 +167,13 @@
     color: #fff;
     text-align: left;
     font-family: "LetteraTextLL Italic";
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .middle-section .middle-content p {
     color: #737373;
     text-align: left;
-    font-family: "LetteraTextLL Regular";
+    font-family: "MarkPro Regular";
     font-size: 1.2rem;
 }
 
@@ -203,20 +214,26 @@
 
 .bottom-section .bottom-left .product-card h1,
 .bottom-section .bottom-right .product-card h1 {
-    font-family: "LetteraTextLL Regular";
-    font-weight: 100;
-    font-size: 0.8rem;
-    color: #737373;
-    text-align: left;
+    font-family: "MarkPro Regular";
+    font-size: smaller;
+    font-weight: 10;
+    background-color: #2f2f2f;
+    border: none;
+    color: gray;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 2px 2px;
+    cursor: pointer;
+    border-radius: 20px;
     margin-left: 10%;
-    padding-top: 10%;
-    padding-right: 10%;
-    transform: translateZ(20px);
+    margin-top: 10%;
 }
 
 .bottom-section .bottom-left .product-card h2,
 .bottom-section .bottom-right .product-card h2 {
-    font-family: "LetteraTextLL Regular";
+    font-family: "Termina Bold";
     font-weight: 100;
     font-size: 1.7rem;
     color: #fff;
@@ -266,7 +283,7 @@
 }
 
 .bottom-section .bottom-text h1 a {
-    color: #995AFF;
+    color: #EDD348;
     text-align: left;
     font-family: "Termina Bold";
     font-size: 2rem;
@@ -281,7 +298,7 @@
 }
 
 .bottom-section .bottom-text a {
-    color: #995AFF;
+    color: #EDD348;
     text-align: left;
     font-family: "LetteraTextLL Regular";
     font-size: 1.2rem;
@@ -304,32 +321,46 @@
         margin-left: 0%;
     }
 
+    .top-section .top-section-image {
+        width: 100%;
+    }
+
+    .top-section .top-section-image img {
+        width: 100%;
+        padding-right: 0%;
+        margin-left: -4%;
+        margin-top: 5%;
+    }
+
     .top-section .top-section-image img {
         width: 80%;
         padding-left: 15%;
-        padding-top: 10%;
-        padding-right: 5%;
     }
 
     .badge {
-        width: 60%;
-        height: 30%;
-        margin-left: 20%;
-        margin-right: 20%;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        border-radius: 10px;
+        margin-left: 30%;
+        margin-right: 30%;
+        width: 40%;
     }
 
     .badge h1 {
-        padding-top: 5%;
-        padding-bottom: 5%;
+        text-align: center;
+        font-weight: 15;
+        font-size: 0.9rem;
+        padding: 4%;
     }
 
     .top-section .title h1 {
         text-align: center;
+        font-size: 1.5rem;
     }
 
     .top-section .title h2 {
         text-align: center;
-        width: 60%;
         padding-left: 20%;
     }
 

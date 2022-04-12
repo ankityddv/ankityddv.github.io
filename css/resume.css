@@ -10,8 +10,8 @@
 .cover .images img {
     position: absolute;
     width: 50%;
-    padding-left: 23%;
-    padding-right: 27%;
+    padding-left: 27%;
+    padding-right: 23%;
     height: auto;
     left: 0;
     filter: grayscale(100);
@@ -26,7 +26,7 @@
     width: 80%;
     padding-left: 10%;
     padding-right: 10%;
-    margin-top: 50%;
+    margin-top: 60%;
 }
 
 .content .about-me span {
@@ -72,7 +72,7 @@ h1 {
     font-family: 'Termina Bold';
     color: white;
     font-weight: 100;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 h2 {
@@ -84,13 +84,13 @@ h2 {
 
 h3 {
     font-family: 'LetteraTextLL Regular';
-    color: #8245E5;
+    color: #EDD348;
     font-weight: 100;
     font-size: medium;
 }
 
 p {
-    font-family: 'LetteraTextLL Regular';
+    font-family: "MarkPro Regular";
     color: #808893;
     font-weight: 100;
 }
@@ -103,7 +103,7 @@ p {
 
 a {
     font-family: 'LetteraTextLL Regular';
-    color: #8245E5;
+    color: #EDD348;
     font-weight: 100;
     padding-right: 10%;
 }
@@ -129,16 +129,25 @@ a {
 }
 
 .button {
-    margin-top: 10%;
-    background-color: #8245E5;
+    font-family: "MarkPro Regular";
+    font-size: smaller;
+    font-weight: 10;
+    background-color: #EDD348;
+    border: none;
+    padding: 0px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 10px;
     width: 20%;
-    height: 10%;
-    border-radius: 1rem;
+    margin-top: 6%;
 }
 
 .button h2 {
     text-align: center;
     padding: 8%;
+    color: black;
 }
 
 /* Media queries */
@@ -146,12 +155,13 @@ a {
 
     .cover .images img {
         width: 80%;
-        padding-left: 7%;
-        padding-right: 13%;
+        padding-left: 10%;
+        padding-right: 10%;
+        filter: grayscale(0);
     }
 
     .content {
-        margin-top: 80%;
+        margin-top: 90%;
     }
 
     .cover img.headerimg:hover {
@@ -168,16 +178,15 @@ a {
     }
 
     .button {
-        margin-top: 10%;
-        background-color: #8245E5;
-        width: 60%;
-        margin-left: 20%;
-        margin-right: 20%;
-        height: 10%;
+        display: inline-block;
+        width: 80%;
     }
 
     .button h2 {
-        text-align: center;
-        padding: 8%;
+        padding: 0%;
+    }
+
+    h1 {
+        font-size: 1.3rem;
     }
 }
