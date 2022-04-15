@@ -18,16 +18,44 @@
                 <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
             </div>
 
-            <ul class="nav-links">
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#products">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="comingsoon.html">Blogs</a></li>
-            </ul>
+            <div class="right-content">
+                <div class="dropdown">
+                    <button class="dropbtn">About</button>
 
-            <div class="menu">
-                <a href="mobilenav.html"><img src="img/menu-icon.svg" alt="menu-icon"></a>
+                    <div class="dropdown-content">
+                        <a href="#services">Work</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#products">Projects</a>
+                    </div>
+                </div>
+
+                <div class="download">
+                    <a href="https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing">
+                        <div class="download-apps-button">
+                            <h2>Download</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="right-content-mobile">
+                <button
+                    onclick="location.href='https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing';"
+                    class="download-button"><img src="img/download-icon.png" alt="download-icon"></button>
+
+                <div class="dropdown">
+
+                    <button onclick="showMenuPopUp()" class="menu-icon"><img src="img/menu-icon.png"
+                            alt="menu-icon"></button>
+
+                    <div id="dropdown-content" class="dropdown-content">
+                        <a href="index.html#services">Work</a>
+                        <a href="resume.html">Resume</a>
+                        <a href="#contact">Contact</a>
+                        <a href="index.html#products">Projects</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -291,6 +319,15 @@
             max: 3,
             speed: 1
         });
+
+        function showMenuPopUp() {
+            var x = document.getElementById("dropdown-content");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
     </script>
 </body>
 
