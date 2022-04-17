@@ -1,0 +1,4 @@
+function initialisePortfolio() {
+    setNavigation()
+    initialiseIndex()
+}

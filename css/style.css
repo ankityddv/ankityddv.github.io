@@ -54,7 +54,7 @@ body {
 
 /* website logo */
 .nav .logo {
-    display: block;
+    display: flex;
     float: left;
     width: 20%;
 }
@@ -127,29 +127,34 @@ body {
     color: white;
 }
 
-.download-apps-button {
-    font-family: "MarkPro Regular";
-    font-size: 0.6rem;
-    font-weight: 1;
-    background-color: #EDD348;
-    border: none;
-    padding: 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    border-radius: 10px;
-    width: 100%;
+.download {
+    margin-top: 0.5rem;
 }
 
 .download a {
     text-decoration: none;
 }
 
+.download-apps-button {
+    font-family: "MarkPro Regular";
+    font-size: 0.45rem;
+    background-color: #1A1A1A;
+    padding: 0.1rem 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: solid;
+    border-color: #EDD348;
+    border-width: 0.1rem;
+}
+
 .download-apps-button h2 {
     text-align: center;
-    padding: 8%;
-    color: black;
+    padding: 0%;
+    color: white;
 }
 
 /* footer [START] */
@@ -289,19 +294,13 @@ body {
         border-radius: 1rem;
         padding: 1.5% 1%;
         transition: 0.3s;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-        margin-left: -270%;
-        margin-top: 10%;
+        margin-left: -250%;
+        margin-top: 7%;
     }
 
     .right-content-mobile .download-button {
-        background-color: transparent;
-        border: none;
         margin-top: 2%;
-        width: 20%;
+        width: 10%;
     }
 
     .right-content-mobile .download-button img {
