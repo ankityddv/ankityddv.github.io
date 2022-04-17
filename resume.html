@@ -8,57 +8,18 @@
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <!-- Maintain the same order -->
+    <script type="text/javascript" src="js/variables.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/resume.js"></script>
+    <script type="text/javascript" src="js/navBar.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
-<body>
+<body onload="initialiseResume()">
     <!-- Nav [START] -->
-    <section>
-        <div class="nav">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
-            </div>
-
-            <div class="right-content">
-                <div class="dropdown">
-                    <button class="dropbtn">About</button>
-
-                    <div class="dropdown-content">
-                        <a href="#services">Work</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#products">Projects</a>
-                    </div>
-                </div>
-
-                <div class="download">
-                    <a href="https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing">
-                        <div class="download-apps-button">
-                            <h2>Download</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="right-content-mobile">
-                <button
-                    onclick="location.href='https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing';"
-                    class="download-button"><img src="img/download-icon.png" alt="download-icon"></button>
-
-                <div class="dropdown">
-
-                    <button onclick="showMenuPopUp()" class="menu-icon"><img src="img/menu-icon.png"
-                            alt="menu-icon"></button>
-
-                    <div id="dropdown-content" class="dropdown-content">
-                        <a href="index.html#services">Work</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="#contact">Contact</a>
-                        <a href="index.html#products">Projects</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="navBar"></section>
     <!-- Nav [END] -->
 
     <!-- Cover [START] -->
@@ -160,7 +121,7 @@
                         them using the custom ERC-20 token if they like the song.</li>
                     <li>Worked with Xcode, Swift, CloudKit, CoreData, Combine, AVPlayer audio streaming.</li>
                 </ul>
-                <a href="https://github.com/Encantus-Org/Encantus-iOS">Source code</a>
+                <a id="encantus-source-code">Source code</a>
             </div>
 
             <div class="project-block">
@@ -171,7 +132,7 @@
                     <li>In the world of procrastination, an app focused on your tasks for the day.</li>
                     <li>Worked with Xcode, Swift, CloudKit, CoreData, Combine </li>
                 </ul>
-                <a href="https://apps.apple.com/in/app/taskbit-collaborative-tasks/id1585841494">Get on App Store</a>
+                <a id="taskbit-download">Get on App Store</a>
             </div>
 
             <div class="project-block">
@@ -182,7 +143,7 @@
                     <li>Within one month of the launch, the app was ranking among top 10 in more than 5 countries
                         including US, Canada, Denmark, India and Japan.</li>
                 </ul>
-                <a href="https://apps.apple.com/us/app/dinero-subscription-manager/id1545370811">Get on App Store</a>
+                <a id="dinero-download">Get on App Store</a>
             </div>
 
             <div class="project-block">
@@ -194,8 +155,8 @@
                         available for iPhones, iPad and Mac.</li>
                     <li>Within one day of the launch, the app was ranking in to 100 in more than 10 countries.</li>
                 </ul>
-                <a href="https://apps.apple.com/in/app/gosio/id1555987291/">Get on App Store</a>
-                <a href="https://github.com/ankityddv/Gosio-iOS">Source code</a>
+                <a id="gosio-download">Get on App Store</a>
+                <a id="gosio-source-code">Source code</a>
             </div>
 
             <div class="project-block">
@@ -207,7 +168,7 @@
                         as the hostel oce to make the monitoring process of hostels and students more ecient and
                         organised.</li>
                 </ul>
-                <a href="https://github.com/ankityddv/Homeversity-iOS">Source code</a>
+                <a id="homeversity-source-code">Source code</a>
             </div>
 
             <div class="project-block">
@@ -218,7 +179,7 @@
                     <li>Designed and developed an open source pdf scanner from scratch. DocScan allows to scan and share
                         your PDF documents via WhatsApp, mail and other multiple ways.</li>
                 </ul>
-                <a href="https://github.com/ankityddv/DocScan-iOS">Source code</a>
+                <a id="docScan-source-code">Source code</a>
             </div>
 
             <div class="project-block">
@@ -233,27 +194,32 @@
             <p>📜 CERTIFICATES</p>
             <div class="certificate-block-top">
                 <h1>iOS 12 & Swift 4 - The Complete iOS App Development Bootcamp (2020) (2018 - Present)</h1>
-                <a href="https://ude.my/UC-01NRPZIY">Check certificate</a>
+                <a id="iOS-Udemy-certificate-download">Check certificate</a>
             </div>
+
             <div class="certificate-block">
-                <h1>Hack-a-thon on API Development (10/2019 - Present)</h1>
+                <h1>Hack-a-thon on API Development (10/2019)</h1>
                 <h2>Certificate by School of Computer Science and Engineering</h2>
-                <a href="https://drive.google.com/file/d/1EGPQvIbvjQSKibWF_hdiO1rux0obc0xb/view?usp=drivesdk">Check
+                <a id="API-development-certificate-download">Check
                     certificate</a>
             </div>
+
             <div class="certificate-block">
-                <h1>Fundamentals of Parallelism on Intel Architecture (11/2019 - Present)</h1>
-                <a href="https://www.coursera.org/account/accomplishments/verify/HJUQATWS58X8">Check certificate</a>
+                <h1>Fundamentals of Parallelism on Intel Architecture (11/2019)</h1>
+                <a id="fundamentalsOfParallelism-coursera-certificate-download">Check certificate</a>
             </div>
+
             <div class="certificate-block">
                 <h1>Python Data Visualization (06/2019 - Present)</h1>
-                <a href="https://www.coursera.org/account/accomplishments/certificate/2S8XLDVVJ85E">Check
+                <a id="pythonDataVisualization-coursera-certificate-download">Check
                     certificate</a>
             </div>
+
             <div class="certificate-block">
                 <h1>Hackgrid 2019 (03/2019 - Present)</h1>
                 <p>Volunteer Certificate</p>
             </div>
+
             <div class="certificate-block">
                 <h1>iOS Fusion 5.0 (09/2019 - Present)</h1>
                 <p>Technical Support</p>
@@ -275,7 +241,7 @@
             </div>
 
             <section class="download">
-                <a href="https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing">
+                <a id="resume-download-button-bottom">
                     <div class="button">
                         <h2>Download Resume</h2>
                     </div>
@@ -285,33 +251,7 @@
     </section>
     <!-- Content [END] -->
 
-    <!-- Footer [START] -->
-    <section>
-        <div id="contact" class="footer">
-            <div class="left-section">
-                <div class="top-text">
-                    <h1>Let’s start something together. <br><br> Start by <a href="social.html">saying hi</a></h1>
-                    <h2>🤝 Social</h2>
-                    <h3><a href="social.html">@ankityddv</a></h3>
-                    <h4><a href="mailto:yadavankit840@gmail.com">yadavankit840@gmail.com</a></h4>
-                </div>
-            </div>
-            <div class="right-section">
-                <ul class="nav-links-footer">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Projects</a></li>
-                    <li><a href="manatwork.html">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="comingsoon.html">Blogs</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>© 2021. All rights reserved.</p>
-        </div>
-    </section>
-    <!-- Footer [END] -->
+    <section id="footer"></section>
 
     <script src="js/vanilla-tilt.min.js"></script>
     <script>
@@ -319,15 +259,6 @@
             max: 3,
             speed: 1
         });
-
-        function showMenuPopUp() {
-            var x = document.getElementById("dropdown-content");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
     </script>
 </body>
 

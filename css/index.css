@@ -1,5 +1,4 @@
 /* top - section [START] */
-
 .top-section {
     display: flex;
     width: 1005;
@@ -326,15 +325,10 @@
     }
 
     .top-section .top-section-image img {
-        width: 100%;
-        padding-right: 0%;
-        margin-left: -4%;
-        margin-top: 5%;
-    }
-
-    .top-section .top-section-image img {
         width: 80%;
-        padding-left: 15%;
+        padding-right: 0%;
+        margin-left: 15%;
+        margin-top: 15%;
     }
 
     .badge {

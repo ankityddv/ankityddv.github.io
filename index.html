@@ -8,58 +8,20 @@
     <title>@ankityddv - Me</title>
     <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/index.css">
+    <!-- Maintain the same order -->
+    <script src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="js/variables.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/navBar.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
-<body>
-
+<body onload="initialisePortfolio()">
     <!-- Nav [START] -->
-    <section>
-        <div class="nav">
-            <div class="logo">
-                <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
-            </div>
-
-            <div class="right-content">
-                <div class="dropdown">
-                    <button class="dropbtn">About</button>
-
-                    <div class="dropdown-content">
-                        <a href="#services">Work</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#products">Projects</a>
-                    </div>
-                </div>
-
-                <div class="download">
-                    <a href="https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing">
-                        <div class="download-apps-button">
-                            <h2>Download</h2>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-            <div class="right-content-mobile">
-                <button
-                    onclick="location.href='https://drive.google.com/file/d/18etQ5BJQcj_Icq_a1tm-cSw0im8CmBJw/view?usp=sharing';"
-                    class="download-button"><img src="img/download-icon.png" alt="download-icon"></button>
-
-                <div class="dropdown">
-                    <button onclick="showMenuPopUp()" class="menu-icon"><img src="img/menu-icon.png"
-                            alt="menu-icon"></button>
-
-                    <div id="dropdown-content" class="dropdown-content">
-                        <a href="#services">Work</a>
-                        <a href="resume.html">Resume</a>
-                        <a href="#contact">Contact</a>
-                        <a href="#products">Projects</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="navBar"></section>
     <!-- Nav [END] -->
 
     <!-- Top-section [START] -->
@@ -91,48 +53,7 @@
     <!-- Middle-section [START] -->
     <section id="services">
         <div class="middle-section">
-            <div class="cards">
-                <a href="manatwork.html" style="text-decoration: none;">
-                    <div class="card">
-                        <div class="card-content">
-                            <h1>Design</h1>
-                            <h2>Create digital products with unique ideas</h2>
-                            <p>16 PROJECTS</p>
-                        </div>
-                        <div class="card-emoji">
-                            <h3>✍🏻</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="manatwork.html" style="text-decoration: none;">
-                    <div class="card">
-                        <div class="card-content">
-                            <h1>App-Dev</h1>
-                            <h2>I develop iOS apps with smooth UI </h2>
-                            <p>5 PROJECTS</p>
-                        </div>
-                        <div class="card-emoji">
-                            <h3>📱</h3>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="manatwork.html" style="text-decoration: none;">
-
-                    <div class="card">
-                        <div class="card-content">
-                            <h1>ASO</h1>
-                            <h2>Boost your apps with ASO optmize</h2>
-                            <p>3 PROJECTS</p>
-                        </div>
-                        <div class="card-emoji">
-                            <h3>🎯</h3>
-                        </div>
-                    </div>
-                </a>
-
-            </div>
+            <div id="cards" class="cards"></div>
 
             <div class="middle-content">
                 <h1>👋 Introduce</h1>
@@ -154,15 +75,9 @@
                 <h1>Latest Works</h1>
                 <p>Perfect solutions & perfect experience</p>
             </div>
-            <a href="https://apps.apple.com/us/app/dinero-subscription-manager/id1545370811"
-                style="text-decoration: none;">
-                <div class="product-card">
-                    <h1>SUBSCRIPTION MANAGER</h1>
-                    <h2>Dinero</h2>
-                    <img src="img/dinero-logo-project-card.png">
-                    <h3>Under #100 top free apps in finance*</h3>
-                </div>
-            </a>
+
+            <a id="product-card0" style="text-decoration: none; z-index: -1"></a>
+
             <div class="bottom-text">
                 <h1><a href="https://www.github.com/ankityddv">ALL PROJECTS</a></h1>
                 <p>/* some projects don’t allow publish by NDA if you want to see more, <a
@@ -171,73 +86,15 @@
         </div>
 
         <div class="bottom-right">
-            <a href="https://apps.apple.com/in/app/gosio/id1555987291/" style="text-decoration: none;">
-                <div class="product-card">
-                    <h1>GOAL TRACKER</h1>
-                    <h2>Gosio</h2>
-                    <img src="img/gosio-logo-project-card.png">
-                    <h3>Under #500 top free apps in finance*</h3>
-                </div>
-            </a>
-            <a href="resume.html#more-projects" style="text-decoration: none;">
-                <div class="product-card">
-                    <h1>MORE PROJECTS</h1>
-                    <h2>@ankityddv - Github</h2>
-                    <!-- <img src="img/dinero-logo-project-card.png"> -->
-                    <h3>For more open source projects, have a look at my resume project section.</h3>
-                </div>
-            </a>
+            <a id="product-card1" style="text-decoration: none;"></a>
+            <a id="product-card2" style="text-decoration: none;"></a>
         </div>
     </section>
     <!-- Bottom-section [END] -->
 
     <!-- Footer [START] -->
-    <section id="contact">
-        <div class="footer">
-            <div class="left-section">
-                <div class="top-text">
-                    <h1>Let’s start something together. <br><br> Start by <a href="social.html">saying hi</a></h1>
-                    <h2>🤝 Social</h2>
-                    <h3><a href="social.html">@ankityddv</a></h3>
-                    <h4><a href="mailto:yadavankit840@gmail.com">yadavankit840@gmail.com</a></h4>
-                </div>
-            </div>
-
-            <!-- 👇 ONLY VISIBLE TO DESKTOP USERS -->
-            <div class="right-section">
-                <ul class="nav-links-footer">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#products">Projects</a></li>
-                    <li><a href="manatwork.html">Resume</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="comingsoon.html">Blogs</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>© 2022. All rights reserved.</p>
-        </div>
-    </section>
+    <section id="footer"></section>
     <!-- Footer [END] -->
-    <script src="js/vanilla-tilt.min.js"></script>
-    <script>
-        VanillaTilt.init(document.querySelectorAll(".product-card, .card, .top-section-image"), {
-            max: 7,
-            speed: 1
-        });
-    </script>
-
-    <script>
-        function showMenuPopUp() {
-            var x = document.getElementById("dropdown-content");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    </script>
 </body>
 
 </html>
