@@ -157,11 +157,12 @@ a {
         width: 80%;
         padding-left: 10%;
         padding-right: 10%;
+        margin-top: 10%;
         filter: grayscale(0);
     }
 
     .content {
-        margin-top: 90%;
+        margin-top: 110%;
     }
 
     .cover img.headerimg:hover {

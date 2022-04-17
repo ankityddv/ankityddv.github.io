@@ -59,7 +59,7 @@ function setNavigation() {
 function loadNavBar() {
     document.getElementById("navBar").innerHTML = `
     <div class="nav">
-        <div class="logo">
+        <div class="left-content">
             <a href="index.html"><img src="img/logo.png" alt="logo" /></a>
         </div>
 
